@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem id="menu_rs_root" name="Recrutamento CRM" sequence="10"/>
+    
+    <menuitem id="menu_rs_vagas" name="Vagas CRM"
+              parent="menu_rs_root"
+              action="crm.crm_lead_all_oppor"
+              sequence="10"/>
+</odoo>

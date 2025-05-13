@@ -1,0 +1,14 @@
+<record id="view_crm_lead_form_rs_vaga_button" model="ir.ui.view">
+    <field name="name">crm.lead.form.rs.vaga.button</field>
+    <field name="model">crm.lead</field>
+    <field name="inherit_id" ref="rs_crm_vagas.view_crm_lead_form_rs_vaga"/>
+    <field name="arch" type="xml">
+        <xpath expr="//header" position="inside">
+            <button name="action_create_applicant_from_vaga"
+                    type="object"
+                    string="Criar Candidato"
+                    class="btn-primary"
+                    attrs="{'invisible': [('is_job_vacancy','=',False)]}"/>
+        </xpath>
+    </field>
+</record>
